@@ -1,4 +1,4 @@
-elixr
+elixir
 =====
 
-An AngularJS and Flask CMS
+An AngularJS app generator
