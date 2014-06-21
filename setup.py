@@ -10,7 +10,12 @@ setup(
     author='Zach McGrenere & Neil-the danger-Chudleigh',
     author_email='zach@mcgrenere.com',
     url='http://flongular.com/elixir',
+    package_dir = {'':'elixir'},
     py_modules=['elixir'],
     license='MIT',
+    entry_points="""
+    [console_scripts]
+    elixir = elixir
+    """,
     install_requires=REQUIREMENTS
 )
