@@ -1,0 +1,9 @@
+{% include 'header.lxr' %}
+
+    angular.module('{{name}}.model', [])
+
+    .factory('{{name}}Service', function($http) {
+        
+    })
+
+{% include 'footer.lxr' %}

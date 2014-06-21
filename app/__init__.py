@@ -1,11 +1,11 @@
 from __future__ import absolute_import, print_function
+
 import os
+
 from jinja2 import Environment, PackageLoader
 
 
 def app(name, **kwargs):
-
-
 	env = Environment(loader=PackageLoader('app', '../templates'))
 
 	os.mkdir('directives')

@@ -3,7 +3,7 @@ import argparse
 
 from app import app
 #from directive import directive
-#from module import module
+from module import module
 #from service import service
 
 
@@ -21,7 +21,7 @@ app_group.add_argument('-n', '--name', help='Set the application name - default:
 parse_module = subparsers.add_parser('module', help='Create module scaffolding')
 module_group = parse_module.add_argument_group('module')
 
-module_group.set_defaults()
+module_group.set_defaults(func=module)
 module_group.add_argument('name', help='The name of the module')
 module_group.add_argument('-m','--model-name', help='The name of the models (comma separated) - default: module name', default='%(name)'+'Model')
 module_group.add_argument('-v','--view-name', help='The name of the views (comma separated)- default: module name', default='%(name)'+'View')
@@ -50,5 +50,4 @@ service_group.add_argument('name', help="The name of the service")
 
 #args
 args=parser.parse_args()
-print(vars(args))
 args.func(**vars(args))

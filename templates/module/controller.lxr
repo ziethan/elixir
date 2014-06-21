@@ -1,0 +1,9 @@
+{% include 'header.lxr' %}
+
+    angular.module('{{name}}.controller', [])
+    
+    .controller('{{name}}Controller', function($scope) {
+        
+    })
+
+{% include 'footer.lxr' %}
