@@ -6,14 +6,14 @@ from jinja2 import Environment, PackageLoader
 def app(name, **kwargs):
 
 
-	env = Environment(loader=PackageLoader('app', '../templates'))
+    env = Environment(loader=PackageLoader('app', '../templates'))
 
-	os.mkdir('directives')
-	os.mkdir('services')
-	os.mkdir('modules')
+    os.mkdir('directives')
+    os.mkdir('services')
+    os.mkdir('modules')
 
-	template = env.get_template('app/app.lxr')
-	tmp = template.render(name=name)
+    template = env.get_template('app/app.lxr')
+    tmp = template.render(name=name)
 
-	with open(name+'.js', 'w+') as f:
-		f.write(tmp)
+    with open(name+'.js', 'w+') as f:
+        f.write(tmp)

@@ -2,10 +2,8 @@ from __future__ import absolute_import, print_function
 import argparse
 
 from app import app
-#from directive import directive
-#from module import module
-#from service import service
-
+from directive import directive
+from service import service
 
 parser = argparse.ArgumentParser()
 subparsers = parser.add_subparsers(title='commands',help='Select a command')
@@ -31,21 +29,14 @@ module_group.add_argument('-c','--controller-name', help='The name of the contro
 parse_directive = subparsers.add_parser('directive', help='Create directive scaffolding')
 directive_group = parse_directive.add_argument_group('directive')
 
-directive_group.set_defaults()
+directive_group.set_defaults(func=directive)
 directive_group.add_argument('name', help="The name of the directive")
-
-#model
-parse_model = subparsers.add_parser('model', help='Create model scaffolding')
-model_group = parse_model.add_argument_group('model')
-
-model_group.set_defaults()
-model_group.add_argument('name', help="The name of the model")
 
 #service
 parse_service = subparsers.add_parser('service', help='Create service scaffolding')
 service_group = parse_service.add_argument_group('service')
 
-service_group.set_defaults()
+service_group.set_defaults(func=service)
 service_group.add_argument('name', help="The name of the service")
 
 #args
