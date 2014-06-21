@@ -1,0 +1,14 @@
+{% include 'header.lxr'%}
+    angular.module('{{name}}',[])
+
+    .directive('{{name}}', function() {
+        return {
+            restrict: 'E',
+            scope: {},
+            template: '',
+            link: function(scope, elem, attrs) {
+
+            }
+        };
+    })
+{% include 'footer.lxr'%}
