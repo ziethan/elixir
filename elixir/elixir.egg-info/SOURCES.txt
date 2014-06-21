@@ -1,3 +1,4 @@
+elixir
 setup.py
 elixir/elixir.py
 elixir/elixir.egg-info/PKG-INFO

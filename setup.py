@@ -17,5 +17,7 @@ setup(
     [console_scripts]
     elixir = elixir
     """,
-    install_requires=REQUIREMENTS
+    include_package_data=True,
+    install_requires=REQUIREMENTS,
+    scripts = ["elixir"]
 )
