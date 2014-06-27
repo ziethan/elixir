@@ -13,13 +13,16 @@ elixir app
 Yep, it's that simple!
 
 ## Install
-Clone the repo, put it where ever you like and then run
+The best option is to pip install it:
+```
+pip install cask-elixir
+```
+
+Or you can clone the repo, put it where ever you like and then run
 ```
 python setup.py install
 ```
 If you want to install globally you'll need to use `sudo`
-
-At the moment there isn't pip support but probably put it up today. June 27th, 2014 at the time of writing this by the way.
 
 ## Usage
 
