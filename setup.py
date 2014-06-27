@@ -1,23 +1,19 @@
 #!/usr/bin/env python
 
 from setuptools import setup
-REQUIREMENTS = [i.strip() for i in open("requirements.txt").readlines()]
 
 setup(
     name='elixir',
     version='0.1.0',
-    description='An AngularJS app generator',
+    description='An AngularJS app and component generator',
     author='Zach McGrenere & Neil-the danger-Chudleigh',
     author_email='zach@mcgrenere.com',
     url='http://flongular.com/elixir',
-    package_dir = {'':'elixir'},
-    py_modules=['elixir'],
     license='MIT',
-    entry_points="""
-    [console_scripts]
-    elixir = elixir
-    """,
+    zip_safe=False,
+    entry_points = {'console_scripts': ['elixir = elixir:main']},
+    packages=['elixir'],
+    package_data={'': ['templates/*.lxr']},
     include_package_data=True,
-    install_requires=REQUIREMENTS,
-    scripts = ["elixir"]
+    install_requires=['Jinja2==2.7.3', 'MarkupSafe==0.23', 'argparse==1.2.1']
 )

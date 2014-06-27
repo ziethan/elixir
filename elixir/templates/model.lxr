@@ -1,9 +1,7 @@
 {% include 'header.lxr' %}
-
     angular.module('{{name}}.model', [])
-
-    .factory('{{name}}Service', function($http) {
+    
+    .factory('{{name}}Service', ['$http', function($http) {
         
-    })
-
+    }])
 {% include 'footer.lxr' %}

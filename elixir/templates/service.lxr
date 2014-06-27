@@ -1,7 +1,7 @@
 {% include 'header.lxr'%}
     angular.module('{{name}}',[])
-
-    .service('{{name}}', function() {
-
-    })
+    
+    .service('{{name}}', [function() {
+        
+    }])
 {% include 'footer.lxr'%}

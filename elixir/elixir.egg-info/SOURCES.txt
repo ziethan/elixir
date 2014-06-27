@@ -1,9 +1,0 @@
-elixir
-setup.py
-elixir/elixir.py
-elixir/elixir.egg-info/PKG-INFO
-elixir/elixir.egg-info/SOURCES.txt
-elixir/elixir.egg-info/dependency_links.txt
-elixir/elixir.egg-info/entry_points.txt
-elixir/elixir.egg-info/requires.txt
-elixir/elixir.egg-info/top_level.txt

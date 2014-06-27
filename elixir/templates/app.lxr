@@ -1,9 +1,7 @@
 {% include 'header.lxr'%}
-
     angular.module('{{name}}',[])
-
-    .config(function() {
-
-    })
-
+    
+    .config([function() {
+        
+    }])
 {% include 'footer.lxr'%}
