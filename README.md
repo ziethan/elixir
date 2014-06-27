@@ -1,14 +1,11 @@
 # Elixir
----
 
 A command line AngularJS app generator written in python. Creates scaffolding for directives, services, modules, controllers, models, and views given the flongular specification.
 
 ## Version
----
 v0.1.0
 
 ## Example
----
 Here's a basic example of creating an app
 ```
 elixir app
@@ -16,7 +13,6 @@ elixir app
 Yep, it's that simple!
 
 ## Install
----
 Clone the repo, put it where ever you like and then run
 ```
 python setup.py install
@@ -26,7 +22,6 @@ If you want to install globally you'll need to use `sudo`
 At the moment there isn't pip support but probably put it up today. June 27th, 2014 at the time of writing this by the way.
 
 ## Usage
----
 
 ### App
 > 
