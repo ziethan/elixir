@@ -1,6 +1,6 @@
 # Elixir
 
-A command line AngularJS app generator written in python. Creates scaffolding for directives, services, modules, controllers, models, and views given the flongular specification.
+A command line AngularJS app generator written in python. Creates scaffolding for directives, services, modules, controllers, models, and views given the flongular specification. Elixir is part of the cask tool suite that is currently under active development.
 
 ## Version
 v0.1.0
