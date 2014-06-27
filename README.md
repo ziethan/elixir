@@ -24,7 +24,6 @@ At the moment there isn't pip support but probably put it up today. June 27th, 2
 ## Usage
 
 ### App
-> 
 Generates application scaffolding in the form of an app bootstrap and directives, services, and modules directory.
 ```
 elixir app [-n | --name <name>]
@@ -34,7 +33,6 @@ elixir app [-n | --name <name>]
 ```
 
 ### Directive
-> 
 Creates a directive directory with a directive module.
 ```
 elixir directive <name>
@@ -45,7 +43,6 @@ name                    The name of the directive
 * must be run from application root directory
 
 ### Service
-> 
 Creates a service directory with a service module.
 ```
 elixir service <name>
@@ -56,7 +53,6 @@ name                    The name of the service
 * must be run from application root directory
 
 ### Module
-> 
 Creates a module directory with an initial module bootstrap, controller, model, and view with their respective directories.
 ```
 elixir module <name> [-m | --model-name <model-name>] [-v | --view-name <view-name>] [-c | --controller-name <controller-name>]
@@ -70,7 +66,6 @@ name                    The name of the module
 * must be run from application root directory
 
 ### Controller
-> 
 Creates a controller within a module.
 ```
 elixir controller <name>
@@ -82,7 +77,6 @@ name                    The name of the controller
 
 
 ### Model
-> 
 Creates a model within a module.
 ```
 elixir model <name>
@@ -93,7 +87,6 @@ name                    The name of the model
 * must be run from inside a module's directory
 
 ### View
-> 
 Creates a view within a module.
 ```
 elixir view <name>
